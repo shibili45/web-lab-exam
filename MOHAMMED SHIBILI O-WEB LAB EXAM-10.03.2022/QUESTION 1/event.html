@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>event handling</title>
+        <script>
+            function f1()
+            {
+                document.getElementById("image").src="img1.jpg"
+                document.getElementById("head").innerHTML="HELLO!!"
+            }
+            function f2()
+            {
+                document.getElementById("image").src="img2.jpg"
+                document.getElementById("head").innerHTML="WELCOME :)"
+            }
+        </script>
+    </head>
+    <body style="background-color: rgb(75, 207, 130);">
+       <center> <img src="img1.jpg" 
+        onmouseover="f1()"
+        onmouseout="f2()"
+        width="20%"
+        style="border-radius: 3;" id="image">
+        <h1 style="text-decoration: blueviolet;"
+        id="head">HELLO!!</h1></center>
+
+
+    </body>
+</html>
